@@ -1,0 +1,303 @@
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content {
+      max-width: 1500px;
+      margin: auto;
+  }
+
+   .grid-container {
+       grid-template-columns: 20% auto;
+       grid-template-areas:
+   "grid-header   grid-header"
+       "grid-logo  grid-logo"
+       "grid-content grid-content"
+       "grid-c"  "grid-c"
+   }
+
+   .grid-footer {
+     display: grid;
+     grid-template-columns: 34% auto;
+     grid-template-areas:
+     "grid-adress  grid-contact  grid-aabningstider";
+   }
+
+   .grid-header,
+   .grid-footer {
+    background-color: #2a3952;
+    color: #fff;
+}
+
+.infolinje {
+
+  margin-left: 1%;
+  margin-top: 0.3%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+}
+
+.sogefeltflytning {
+  overflow: hidden;
+}
+
+.sogefeltflytning input {
+ width: 70%;
+ height: 42px;
+ border-radius: 20px;
+ float: left;
+ margin-left: 15%;
+ background-color: #F7F7F7;
+ border: 4px solid #2A3952;
+ margin-top: 6.4%;
+ text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.facebook {
+  width: 2.5%;
+  height: auto;
+  float: left;
+  margin-top: 0.6%;
+  margin-left: 2%;
+}
+
+.instagram {
+  width: 2.5%;
+  height: auto;
+  float: left;
+  margin-top: 0.6%;
+  margin-left: 2%;
+}
+
+.in {
+  width: 2.5%;
+  height: auto;
+  float: right;
+  margin-top: 0.6%;
+  margin-right: 2%
+}
+
+.twitter {
+  width: 2.5%;
+  height: auto;
+  float: right;
+  margin-top: 0.6%;
+  margin-right: 2%
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-c1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.txt {
+  margin: 2%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nem {
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+}
+
+.n1 {
+background-color: #2a3952;
+color: white;
+height: auto;
+width: 90%;
+border-radius: 5px;
+padding: 2%;
+padding-top: 4%;
+padding-bottom: 4%;
+margin: 2%;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+}
+
+.n2 {
+  background-color: #2a3952;
+  color: white;
+  height: auto;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 2%;
+  margin: 2%;
+  margin-left: 34.5%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+}
+
+.n3 {
+  background-color: #2a3952;
+  color: white;
+  height: auto;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 2%;
+  font-size: x-large;
+}
+
+.n4 {
+  background-color: #2a3952;
+  color: white;
+  height: auto;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: 2%;
+  font-size: x-large;
+  margin-bottom: 10%;
+}
+
+.grid-footer {
+  padding-bottom: 1%;
+}
+
+.grid-footsie {
+  background-color: #2a3952;
+}
+
+.grid-adress {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  width: 33.33%;
+  text-align: center;
+  align-self: center;
+  margin-left: 25%;
+}
+
+.grid-contact {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  width: 33.33%;
+  text-align: center;
+  align-self: center;
+  margin-left: 25%;
+}
+
+.grid-aabningstider {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  width: 33.33%;
+  text-align: center;
+  align-self: center;
+  margin-left: 25%;
+}
+
+.grid-header {
+    padding-top: 1.5%;
+}
+
+.grid-header nav{
+margin-left: 20%;
+  background-color: #2a3952;
+}
+
+.grid-header nav a {
+  display: inline;
+  margin-top: 1.5%;
+  color: white;
+  background-color: #2a3952;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  margin-right: 8%;
+  margin-bottom: 3%;
+  font-size: x-large;
+
+  z-index: 99;
+}
+
+.grid-header a:hover {
+    color: orange;
+}
+
+.grid-c1 a:hover {
+  color: orange;
+}
+
+.grid-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-content a:hover {
+  color: orange;
+}
+
+.n2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.n2 a:hover {
+  color: orange;
+}
+
+.grid-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.grid-contact a:hover {
+    color: orange;
+}
+
+
+   @media only screen and (min-width: 992px)   {
+       .grid-container {
+     grid-gap: 20px;
+           grid-template-columns: 120px auto 120px;
+           grid-template-areas:
+     "grid-header  grid-header  grid-header"
+           "grid-logo  grid-logo  grid-logo"
+           "grid-content grid-content grid-content"
+           "grid-adress  grid-contact  grid-aabningstider";
+           max-width: 1500px;
+           align-self: center;
+       }
+
+       .sogefeltflytning input {
+         width: 31%;
+         height: 41px;
+         float: right;
+         margin-right: 1%;
+         margin-top: 1%;
+       }
+
+.grid-content {
+ background-color: #fff;
+ color: #444;
+ padding: 10px;
+ font-size: 150%;
+}
+
+.grid-logo {
+ background-color: #2a3952;
+ color: #fff;
+}
+
+nav .icon {
+    display: none;
+}
+
+}
