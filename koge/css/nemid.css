@@ -235,28 +235,14 @@ margin-left: 20%;
   color: orange;
 }
 
-.grid-content a {
-    color: white;
-    text-decoration: none;
-}
-
 .grid-content a:hover {
   color: orange;
-}
-
-.n2 a {
-    color: white;
-    text-decoration: none;
 }
 
 .n2 a:hover {
   color: orange;
 }
 
-.grid-contact a {
-  color: white;
-  text-decoration: none;
-}
 
 .grid-contact a:hover {
     color: orange;
